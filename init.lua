@@ -15,13 +15,15 @@ vim.g.mapleader = " "
 
 vim.keymap.set('n', '<leader>r', ':restart<CR>')
 vim.keymap.set('n', '<leader>o', ':update<CR> :source<CR>')
-vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float)
 
 vim.keymap.set('n', '<leader>1', ':edit $HOME/.config/nvim/init.lua<CR>')
+
+vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
+vim.keymap.set('n', 'gd', vim.lsp.buf.definition)
 
 vim.pack.add({
     { src = "https://github.com/neovim/nvim-lspconfig" },
 })
 
-vim.lsp.enable({ "lua_ls", "rust_analyzer"})
+vim.lsp.enable({ "lua_ls", "rust_analyzer" })
