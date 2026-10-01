@@ -418,5 +418,3 @@ vim.keymap.set('n', '<leader>cc', '<cmd>cclose<CR>', { desc = 'Close Quickfix' }
 -- aesthetics
 vim.o.winborder = "rounded"
 
--- aesthetics
-vim.o.winborder = "rounded"
