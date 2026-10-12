@@ -7,6 +7,18 @@
 vim.lsp.enable('rust_analyzer')
 vim.lsp.enable('gopls')
 
+vim.lsp.config('clangd', {
+    cmd = { "clangd", "--background-index" },
+    root_markers = {
+        "MODULE.bazel",
+        "WORKSPACE.bazel",
+        "WORKSPACE",
+        "compile_commands.json",
+        ".git",
+    },
+})
+vim.lsp.enable('clangd')
+
 -- use lua_ls for neovim
 vim.lsp.config('lua_ls', {
     on_init = function(client)

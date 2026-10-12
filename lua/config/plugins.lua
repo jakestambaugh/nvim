@@ -24,6 +24,8 @@ vim.pack.add({
     'https://github.com/nvim-lua/plenary.nvim',
     'https://github.com/nvim-telescope/telescope.nvim',
     'https://github.com/zschreur/telescope-jj.nvim',
+    -- Bazel integration
+    'https://github.com/lewistg/pesto.nvim',
 })
 
 require('fzf-lua').setup { fzf_colors = true }
