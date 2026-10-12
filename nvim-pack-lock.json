@@ -20,6 +20,10 @@
       "rev": "9573948c38bfabeec353ae7dd7d3ffec4c506a6b",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
+    "pesto.nvim": {
+      "rev": "a870ac976d7b4fcd9bf0e466fe6ec29773dfb60d",
+      "src": "https://github.com/lewistg/pesto.nvim"
+    },
     "plenary.nvim": {
       "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
       "src": "https://github.com/nvim-lua/plenary.nvim"
